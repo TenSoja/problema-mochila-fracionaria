@@ -1,5 +1,7 @@
 package br.com.micheldealmeida;
 
+import java.util.Arrays;
+
 public class MochilaGulosa {
 	
 	private Item[] itens = null;
@@ -11,9 +13,13 @@ public class MochilaGulosa {
 		this.itens = itens;
 	}
 	
+	/**
+	 * @param capacidade
+	 * @return
+	 */
 	public Item[] adicionaItens(double capacidade){
 		
-		
+		// TODO: Ordenar itens.
 		
 		Item[] itensAdicionados = new Item[this.itens.length];
     	
