@@ -1,17 +1,17 @@
 package br.com.micheldealmeida;
 
 public class Item {
-
+	
+	public String nome;
 	public double quantidade;
 	public double valor;
-	public String nome;
 
 	/**
-	 * @param quantidade
-	 * @param valor
 	 * @param nome
+	 * @param valor
+	 * @param quantidade
 	 */
-	public Item(double quantidade, double valor, String nome) {
+	public Item(String nome, double valor, double quantidade) {
 		this.quantidade = quantidade;
 		this.valor = valor;
 		this.nome = nome;
