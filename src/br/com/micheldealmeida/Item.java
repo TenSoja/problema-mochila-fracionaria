@@ -17,4 +17,18 @@ public class Item {
 		this.nome = nome;
 	}
 
+	public double getQuantidade() {
+		return quantidade;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+	
+	
+
 }
