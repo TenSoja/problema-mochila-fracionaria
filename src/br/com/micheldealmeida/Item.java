@@ -1,7 +1,7 @@
 package br.com.micheldealmeida;
 
-public class Item {
-	
+public class Item implements Comparable<Item> {
+
 	public String nome;
 	public double quantidade;
 	public double valor;
@@ -28,7 +28,15 @@ public class Item {
 	public String getNome() {
 		return nome;
 	}
-	
-	
 
+	@Override
+	public int compareTo(Item outroItem) {
+		if (this.valor < outroItem.valor) {
+			return -1;
+		}
+		if (this.valor > outroItem.valor) {
+			return 1;
+		}
+		return 0;
+	}
 }
