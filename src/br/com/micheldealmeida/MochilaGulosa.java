@@ -19,7 +19,7 @@ public class MochilaGulosa {
 	 */
 	public Item[] adicionaItens(double capacidade){
 		
-		// TODO: Ordenar itens.
+		Arrays.sort(itens);
 		
 		Item[] itensAdicionados = new Item[this.itens.length];
     	
