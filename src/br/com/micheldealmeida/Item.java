@@ -28,14 +28,15 @@ public class Item implements Comparable<Item> {
 	public String getNome() {
 		return nome;
 	}
+	
 
 	@Override
 	public int compareTo(Item outroItem) {
 		if (this.valor < outroItem.valor) {
-			return -1;
+			return 1;
 		}
 		if (this.valor > outroItem.valor) {
-			return 1;
+			return -1;
 		}
 		return 0;
 	}
