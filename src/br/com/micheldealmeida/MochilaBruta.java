@@ -10,5 +10,13 @@ public class MochilaBruta {
 	public MochilaBruta(Item[] itens) {
 		this.itens = itens;
 	}
+	
+	public Item[] adicionaItens(double capacidade) {
+
+		Item[] itensAdicionados = new Item[this.itens.length];
+
+		return itensAdicionados;
+
+	}
 
 }
