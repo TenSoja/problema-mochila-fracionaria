@@ -17,7 +17,7 @@ public class MochilaGulosa {
 	 * @param capacidade
 	 * @return
 	 */
-	public Item[] adicionaItens(double capacidade) {
+	public Item[] adicionaItens(int capacidade) {
 
 		Arrays.sort(itens);
 
@@ -47,7 +47,7 @@ public class MochilaGulosa {
 		// adiciona outros itens de quantidade 0
 		for (int i = itemIndice; i < this.itens.length; i++) {
 			itensAdicionados[i] = new Item(this.itens[i].nome,
-					this.itens[i].valor, 0.0);
+					this.itens[i].valor, 0);
 		}
 
 		return itensAdicionados;
