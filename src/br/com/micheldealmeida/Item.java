@@ -3,15 +3,15 @@ package br.com.micheldealmeida;
 public class Item implements Comparable<Item> {
 
 	public String nome;
-	public double quantidade;
-	public double valor;
+	public int quantidade;
+	public int valor;
 
 	/**
 	 * @param nome
 	 * @param valor
 	 * @param quantidade
 	 */
-	public Item(String nome, double valor, double quantidade) {
+	public Item(String nome, int valor, int quantidade) {
 		this.quantidade = quantidade;
 		this.valor = valor;
 		this.nome = nome;
