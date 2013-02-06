@@ -11,6 +11,7 @@ public class Item implements Comparable<Item> {
 	 * @param valor
 	 * @param quantidade
 	 */
+
 	public Item(String nome, int valor, int quantidade) {
 		this.quantidade = quantidade;
 		this.valor = valor;
@@ -28,7 +29,6 @@ public class Item implements Comparable<Item> {
 	public String getNome() {
 		return nome;
 	}
-	
 
 	@Override
 	public int compareTo(Item outroItem) {
