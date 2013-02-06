@@ -26,7 +26,7 @@ public class MochilaBruta {
 		int qtdSubconjuntos = 1 << itens2.length;
 		int indiceLista = 0;
 
-		List<Item[]> listaSubconjuntos = new ArrayList<Item[]>(qtdSubconjuntos);
+		List<Item[]> listaSubconjuntos = new ArrayList<Item[]>(qtdSubconjuntos); //tamanho da lista deve ser a quantidade de subconjuntos possiveis.
 
 		for (int i = 0; i < qtdSubconjuntos; i++) {
 			int pos = itens2.length - 1;
@@ -73,10 +73,10 @@ public class MochilaBruta {
 			int valorTotal = 0;
 
 			for (Item item : items) {
-				if (item == null)
+				if (item == null) // Se encontra um item null sai do laço pois é o fim da lista
 					break;
 				pesoTotal += item.quantidade;
-				valorTotal += item.valor * item.quantidade;
+				valorTotal += item.valor * item.quantidade; 
 			}
 			if (valorTotal > valorMelhorSolucao && pesoTotal <= capacidade) {
 				itensMelhorSolucao = items;
@@ -85,7 +85,7 @@ public class MochilaBruta {
 			}
 
 		}
-
+		//retorna o melhor conjunto solução (incluindo os nulos)
 		return itensMelhorSolucao;
 
 	}
