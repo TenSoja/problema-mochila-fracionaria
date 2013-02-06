@@ -14,6 +14,13 @@ public class MochilaBruta {
 		this.itens = itens;
 	}
 
+	/**
+	 * O método de subconjuntos cria uma lista com todos os subconjuntos
+	 * baseados na entrada.
+	 * 
+	 * @param itens2
+	 * @return
+	 */
 	public List<Item[]> subconjuntos(Item[] itens2) {
 
 		int qtdSubconjuntos = 1 << itens2.length;
@@ -44,6 +51,43 @@ public class MochilaBruta {
 			indiceLista = 0;
 		}
 		return listaSubconjuntos;
+	}
+
+	/**
+	 * O método adicionaItens varre todos os subconjuntos em busca da melhor solução para a mochila.
+	 * @param capacidade
+	 * @return
+	 */
+	public Item[] adicionaItens(int capacidade) {
+
+		List<Item[]> listaSubconjuntos = new ArrayList<Item[]>();
+
+		listaSubconjuntos = subconjuntos(itens);
+
+		Item[] itensMelhorSolucao = new Item[this.itens.length];
+
+		int valorMelhorSolucao = 0;
+
+		for (Item[] items : listaSubconjuntos) {
+			int pesoTotal = 0;
+			int valorTotal = 0;
+
+			for (Item item : items) {
+				if (item == null)
+					break;
+				pesoTotal += item.quantidade;
+				valorTotal += item.valor * item.quantidade;
+			}
+			if (valorTotal > valorMelhorSolucao && pesoTotal <= capacidade) {
+				itensMelhorSolucao = items;
+				valorMelhorSolucao = valorTotal;
+
+			}
+
+		}
+
+		return itensMelhorSolucao;
+
 	}
 
 }
