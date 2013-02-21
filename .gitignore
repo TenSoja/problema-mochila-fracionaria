@@ -6,28 +6,6 @@
 
 *.class
 
-<<<<<<< HEAD
 *.DS_Store
 
 *.txt
-=======
-src/.DS_Store
-
-src/br/.DS_Store
-
-src/br/com/.DS_Store
-
-src/br/com/micheldealmeida/.DS_Store
-
-*.txt
-
-bin/br/com/micheldealmeida/.DS_Store
-
-bin/br/com/.DS_Store
-
-bin/br/.DS_Store
-
-bin/.DS_Store
-
-.DS_Store
->>>>>>> .txt e .DS_Store ignorados.
