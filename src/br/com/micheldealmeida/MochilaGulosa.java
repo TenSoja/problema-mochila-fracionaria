@@ -1,6 +1,5 @@
 package br.com.micheldealmeida;
 
-import java.util.Arrays;
 
 public class MochilaGulosa {
 
@@ -18,8 +17,6 @@ public class MochilaGulosa {
 	 * @return
 	 */
 	public Item[] adicionaItens(int capacidade) {
-
-		Arrays.sort(itens);
 
 		Item[] itensAdicionados = new Item[this.itens.length];
 
