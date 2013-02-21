@@ -1,4 +1,3 @@
-
 .classpath
 
 .project
@@ -6,3 +5,7 @@
 *.prefs
 
 *.class
+
+*.DS_Store
+
+*.txt
